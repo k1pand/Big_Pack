@@ -1,0 +1,17 @@
+﻿<Window x:Class="Big_Pack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Big_Pack"
+        mc:Ignorable="d"
+        Title="Главное окно" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <TextBox x:Name="Search" HorizontalAlignment="Left" Height="23" Margin="114,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Verdana" FontSize="14"/>
+        <ComboBox x:Name="Sorting" HorizontalAlignment="Left" Margin="356,9,0,0" VerticalAlignment="Top" Width="120" FontFamily="Verdana" FontSize="14" SelectionChanged="Sorting_SelectionChanged"/>
+        <ComboBox x:Name="Filtering" HorizontalAlignment="Left" Margin="507,10,0,0" VerticalAlignment="Top" Width="120" FontFamily="Verdana" FontSize="14"/>
+        <Label Content="&lt; 1 2 3 4 &gt;" HorizontalAlignment="Left" Margin="689,387,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="14"/>
+        <WrapPanel x:Name="list" HorizontalAlignment="Left" Height="350" Margin="0,38,0,0" VerticalAlignment="Top" Width="800"/>
+
+    </Grid>
+</Window>

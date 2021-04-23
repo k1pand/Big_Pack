@@ -1,0 +1,17 @@
+C:\Users\303\source\repos\Big_Pack\Big_Pack\bin\Debug\Big_Pack.exe.config
+C:\Users\303\source\repos\Big_Pack\Big_Pack\bin\Debug\Big_Pack.exe
+C:\Users\303\source\repos\Big_Pack\Big_Pack\bin\Debug\Big_Pack.pdb
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Big_Pack.csprojAssemblyReference.cache
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\MainWindow.g.cs
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\App.g.cs
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Big_Pack_MarkupCompile.cache
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Big_Pack_MarkupCompile.lref
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\MainWindow.baml
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Big_Pack.g.resources
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Big_Pack.Properties.Resources.resources
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Big_Pack.csproj.GenerateResource.cache
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Big_Pack.csproj.CoreCompileInputs.cache
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Big_Pack.exe
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Big_Pack.pdb
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Material_Control.g.cs
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Material_Control.baml
