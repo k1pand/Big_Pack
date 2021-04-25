@@ -24,5 +24,8 @@ namespace Big_Pack
         {
             InitializeComponent();
         }
+
+        public MainWindow MainWindow;
+
     }
 }

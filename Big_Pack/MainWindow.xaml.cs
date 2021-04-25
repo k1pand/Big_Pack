@@ -33,30 +33,28 @@ namespace Big_Pack
             using (SqlConnection connection = new SqlConnection(Connection.String))
             {
                 connection.Open();
-                SqlCommand command = new SqlCommand($@"SELECT Material.Type, 
+                SqlCommand command = new SqlCommand($@"SELECT Material.MaterialTypeID, 
                                                               Material.Title, 
                                                               Material.MinCount, 
-                                                              Material.MainImagePath, 
-                                                              Material.IsActive, 
-                                                              Manufacturer.Name
-                                                    FROM Material INNER JOIN Manufacturer 
-                                                    ON Material.ManufacturerID = Manufacturer.ID 
-                                                    WHERE Material.Title like '{search.Text}%'" + s, connection);
+                                                              Material.Description, 
+                                                              Material.CountInStock,
+                                                              Material.Image
+                                                    FROM Material", connection);
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.HasRows)
                 {
                     while (reader.Read())
                     {
-                        Yacheyka products = new Yacheyka();
-                        products.name.Text = reader[0].ToString();
-                        products.id.Content = reader[1];
-                        products.price.Content = String.Format("{0:D}", Convert.ToInt32(reader[2]));
-                        products.description.Text = reader[3].ToString();
-                        products.photo.Source = new BitmapImage(new Uri(Directory.GetCurrentDirectory() + "\\" + reader[4].ToString().Replace(" Товары салона красоты", "Товары салона красоты")));
-                        products.fon.Background = !(bool)reader[5] ? new SolidColorBrush(Color.FromRgb(229, 229, 229)) : Brushes.Transparent;
-                        products.MainWindow = this;
-                        products.manufactor.Content = reader[6];
-                        list.Children.Add(products);
+                        Material_Control materials = new Material_Control();
+                        materials.Type_material.Content = reader[0].ToString();
+                        materials.Name_material.Content = reader[1];
+                        materials.Min_count.Content = String.Format("{0:D}", Convert.ToInt32(reader[2]));
+                        materials.Description.Content = reader[3].ToString();
+                        materials.In_Stock.Content = reader[4];
+                        //materials.Photo.Source = new BitmapImage(new Uri(Directory.GetCurrentDirectory() + "\\" + reader[4].ToString().Replace(" materials", "materials")));
+                        //materials.fon.Background = !(bool)reader[5] ? new SolidColorBrush(Color.FromRgb(229, 229, 229)) : Brushes.Transparent;
+                        materials.MainWindow = this;
+                        list.Children.Add(materials);
                     }
                 }
             }

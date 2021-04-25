@@ -8,6 +8,6 @@ namespace Big_Pack
 {
     class Connection
     {
-        public static string String { get; } = "Data Source = tcp:303-15; Initial Catalog = Big_Pack; Integrated Security = true";
+        public static string String { get; } = "Data Source = COLLIDER\\SQLEXPRESS; Initial Catalog = Big_Pack; Integrated Security = true";
     }
 }
