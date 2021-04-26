@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Big_Pack"
              mc:Ignorable="d" 
-             d:DesignHeight="150" d:DesignWidth="800">
+             d:DesignHeight="150" d:DesignWidth="800" Loaded="UserControl_Loaded">
     <Grid Background="White">
         <Image x:Name="Photo" HorizontalAlignment="Left" Height="100" Margin="10,30,0,0" VerticalAlignment="Top" Width="100" Source="picture.png"/>
         <Label x:Name="Type_material" Content="Тип материала" HorizontalAlignment="Left" Margin="151,24,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Verdana"/>
@@ -16,8 +16,9 @@
         <Label Content="Остаток:" HorizontalAlignment="Left" Margin="640,24,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Verdana"/>
         <Label x:Name="In_Stock" Content="0 шт." HorizontalAlignment="Left" Margin="714,24,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Verdana"/>
         <Label x:Name="Min_count" Content="3 шт." HorizontalAlignment="Left" Margin="361,56,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Verdana"/>
-        <Label x:Name="Supplier" Content="Рога и копыта" HorizontalAlignment="Left" Margin="274,88,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Verdana"/>
+        <Label x:Name="Supplier" Content="и где они обитают" HorizontalAlignment="Left" Margin="274,88,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Verdana"/>
         <Label Content="|" HorizontalAlignment="Left" Margin="274,24,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Verdana"/>
+        <Button x:Name="Edit" Content="Изменить" HorizontalAlignment="Left" Margin="658,100,0,0" VerticalAlignment="Top" Width="75" Click="Edit_Click"/>
 
     </Grid>
 </UserControl>

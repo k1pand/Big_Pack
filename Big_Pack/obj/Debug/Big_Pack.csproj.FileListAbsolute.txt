@@ -32,3 +32,5 @@ C:\Project\Big_Pack\Big_Pack\obj\Debug\Big_Pack.g.resources
 C:\Project\Big_Pack\Big_Pack\obj\Debug\Big_Pack.Properties.Resources.resources
 C:\Project\Big_Pack\Big_Pack\obj\Debug\Big_Pack.csproj.GenerateResource.cache
 C:\Project\Big_Pack\Big_Pack\obj\Debug\Big_Pack.csproj.CoreCompileInputs.cache
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Edit.g.cs
+C:\Users\303\source\repos\Big_Pack\Big_Pack\obj\Debug\Edit.baml
