@@ -25,6 +25,7 @@ namespace Big_Pack
         public MainWindow()
         {
             InitializeComponent();
+            Load_data("");
         }
 
         internal void Load_data(string s)
@@ -69,16 +70,6 @@ namespace Big_Pack
             }
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            Load_data("");
-        }
-
-        private void Search_GotFocus(object sender, RoutedEventArgs e)
-        {
-            Search.Text = "";
-        }
-
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             Edit open = new Edit();
@@ -86,6 +77,38 @@ namespace Big_Pack
             open.Show();
             this.Hide();
 
+        }
+
+        
+
+        private void Search_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Search.Text = "";
+        }
+
+        private void Search_MouseLeave(object sender, MouseEventArgs e)
+        {
+             Search.Text = "Поиск...";
+        }
+
+        private void Search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Load_data("");
+        }
+
+        private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void Left_Click(object sender, RoutedEventArgs e)
+        {
+            Scrollcheck.PageUp();
+        }
+
+        private void Right_Click(object sender, RoutedEventArgs e)
+        {
+            Scrollcheck.PageDown();
         }
     }
 }

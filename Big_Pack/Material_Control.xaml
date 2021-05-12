@@ -18,7 +18,7 @@
         <Label x:Name="Min_count" Content="3 шт." HorizontalAlignment="Left" Margin="361,56,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Verdana"/>
         <Label x:Name="Supplier" Content="и где они обитают" HorizontalAlignment="Left" Margin="274,88,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Verdana"/>
         <Label Content="|" HorizontalAlignment="Left" Margin="274,24,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Verdana"/>
-        <Button x:Name="Edit" Content="Изменить" HorizontalAlignment="Left" Margin="658,100,0,0" VerticalAlignment="Top" Width="75" Click="Edit_Click"/>
+        <Button x:Name="Edit" Content="Изменить" HorizontalAlignment="Left" Margin="658,100,0,0" VerticalAlignment="Top" Width="75" Click="Edit_Click" Background="#FFFFC1C1"/>
 
     </Grid>
 </UserControl>

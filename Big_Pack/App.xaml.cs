@@ -12,10 +12,6 @@ namespace Big_Pack
     /// </summary>
     public partial class App : Application
     {
-        private void Application_Startup(object sender, StartupEventArgs e)
-        {
-            var splash = new SplashScreen("big.jpg");
-            splash.Show(true);
-        }
+
     }
 }

@@ -116,7 +116,7 @@
     <Resource Include="Большая пачка.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="big.jpg" />
+    <SplashScreen Include="big.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="picture.png" />

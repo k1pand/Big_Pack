@@ -5,26 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Big_Pack"
         mc:Ignorable="d" 
-        Title="Главное окно" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" WindowStyle="ToolWindow" ResizeMode="CanMinimize" Icon="Большая пачка.ico">
+        Title="Главное окно" Height="550" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" ResizeMode="CanMinimize" Icon="Большая пачка.ico">
     <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="0,38,0,30">
+        <ScrollViewer x:Name="Scrollcheck" VerticalScrollBarVisibility="Hidden" Margin="0,38,0,30" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" >
             <WrapPanel x:Name="list" HorizontalAlignment="Left" Height="AUTO"  VerticalAlignment="Top" Width="800"/>
         </ScrollViewer>
-        <TextBox x:Name="Search" HorizontalAlignment="Left" Height="23" Margin="114,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Verdana" FontSize="14" Text="Введите для поиска" GotFocus="Search_GotFocus"/>
+
+        <TextBox x:Name="Search" HorizontalAlignment="Left" 
+                 Height="23" Margin="114,9,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Width="200" FontFamily="Verdana" 
+                 FontSize="14" ToolTip="Поиск.." Foreground="#FF999999" 
+                 MouseEnter="Search_MouseEnter" MouseLeave="Search_MouseLeave" TextChanged="Search_TextChanged"/>
         <ComboBox x:Name="Sorting" HorizontalAlignment="Left" Margin="356,9,0,0" VerticalAlignment="Top" Width="155" FontFamily="Verdana" FontSize="14">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FFFFC1C1" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
             <ComboBoxItem Content="По наименованию" HorizontalAlignment="Left" Width="155"/>
             <ComboBoxItem Content="Остаток на складе" HorizontalAlignment="Left" Width="155"/>
             <ComboBoxItem Content="Стоимость" HorizontalAlignment="Left" Width="155"/>
         </ComboBox>
         <ComboBox x:Name="Filtering" HorizontalAlignment="Left" Margin="543,10,0,0" VerticalAlignment="Top" Width="120" FontFamily="Verdana" FontSize="14" SelectedIndex="0">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FFFFC1C1" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
             <ComboBoxItem Content="Все типы" HorizontalAlignment="Left" Width="119"/>
             <ComboBoxItem Content="Гранулы" HorizontalAlignment="Left" Width="119"/>
             <ComboBoxItem Content="Краски" HorizontalAlignment="Left" Width="119"/>
             <ComboBoxItem Content="Нитки" HorizontalAlignment="Left" Width="119"/>
         </ComboBox>
-        <Label Content="&lt; 1 2 3 4 &gt;" HorizontalAlignment="Left" Margin="691,395,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="14"/>
         <Label Content="Поиск:" HorizontalAlignment="Left" Margin="57,7,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Vani" FontSize="14"/>
-        <Button x:Name="Add" Content="Добавить" HorizontalAlignment="Left" Margin="689,10,0,0" VerticalAlignment="Top" Width="81" FontFamily="Verdana" FontSize="14" Height="23" Click="Add_Click"/>
+        <Button x:Name="Add" Content="Добавить" HorizontalAlignment="Left" Margin="689,10,0,0" VerticalAlignment="Top" Width="81" FontFamily="Verdana" FontSize="14" Height="23" Click="Add_Click" Background="#FFFFC1C1"/>
+        <Button x:Name="Left" Content="&lt;" HorizontalAlignment="Left" Margin="613,491,0,0" VerticalAlignment="Top" Width="75" Click="Left_Click" Background="#FFFFC1C1"/>
+        <Button x:Name="Right" Content="&gt;" HorizontalAlignment="Left" Margin="709,491,0,0" VerticalAlignment="Top" Width="75" Click="Right_Click" Background="#FFFFC1C1"/>
 
     </Grid>
 </Window>
